@@ -76,7 +76,7 @@ spec:
     solvers:
       - http01:
           ingress:
-            class: istio
+            class: cilium
 ```
 
 ### ClusterIssuer (DNS-01 - Optional)
@@ -156,7 +156,7 @@ Each region manages its own certificates independently:
 **Positive:**
 - Free certificates
 - Automatic renewal
-- Works with Istio ingress
+- Works with Gateway API (Cilium)
 - Multi-region ready
 
 **Negative:**
@@ -165,5 +165,5 @@ Each region manages its own certificates independently:
 
 ## Related
 
-- [ADR-ISTIO-SERVICE-MESH](../../istio/docs/ADR-ISTIO-SERVICE-MESH.md)
+- [ADR-CILIUM-SERVICE-MESH](../../cilium/docs/ADR-CILIUM-SERVICE-MESH.md)
 - [ADR-EXTERNAL-DNS](../../external-dns/docs/ADR-EXTERNAL-DNS.md)
